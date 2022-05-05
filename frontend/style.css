@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Lausanne;
+    src: url(fonts/Lausanne-Regular.otf);
+  }
+
+*, 
+*:before, 
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #494949;
+    background-size: cover;
+    
+    
+}
+
+#team-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lausanne', sans-serif;
+    color: rgb(228, 228, 228);
+    font-size: 50px;
+    transition: font-size 1s;
+}
+
+#team-name:hover {
+    font-size: 100px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 123px;
+    width: 100%;
+    
+    
+}
+
+img {
+    overflow: hidden;
+    width: 100%;
+}
+
+button {
+    width:15%;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.4) 0px 30px 60px -30px;
+    font-family: 'Lausanne', sans-serif;
+    color: rgb(228, 228, 228);
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#buttons button:hover {
+    background-color: #494949;
+    border: 1px solid rgb(228, 228, 228);
+    transform: translateY(-10%);
+}
+
+
+#btn-1 {
+    background-color: #0087FC;
+}
+
+#btn-1:hover ~ #projekt {
+    display: block;
+}
+
+#btn-2:hover ~ #learning {
+    display: block;
+}
+
+#btn-3:hover ~ #solo-work {
+    display: block;
+}
+
+#btn-4:hover ~ #teamwork {
+    display: block;
+}
+
+#btn-5:hover ~ #presentation {
+    display: block;
+}
+
+#projekt {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #0087FC;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    bottom: 0;
+    z-index: 2;
+    width: 1000px;
+    height: 714px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    object-fit: cover; 
+    
+    padding: 40px;
+    /* background-attachment: fixed; */
+    background-image: url(images/project.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+#btn-2 {
+    background-color: #00AB41;
+}
+
+#learning {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #00AB41;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    bottom: 0;
+    z-index: 2;
+    width: 1000px;
+    height: 714px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    object-fit: cover; 
+    
+    padding: 40px;
+    /* background-attachment: fixed; */
+    background-image: url(images/learning.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+#btn-3 {
+    background-color: #FFB901;
+}
+
+#solo-work {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #FFB901;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    bottom: 0;
+    z-index: 2;
+    width: 1000px;
+    height: 714px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    object-fit: cover; 
+    
+    padding: 40px;
+    /* background-attachment: fixed; */
+    background-image: url(images/o);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+#btn-4 {
+    background-color: #FF5848;
+}
+
+#teamwork {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #FF5848;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    bottom: 0;
+    z-index: 2;
+    width: 1000px;
+    height: 714px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    object-fit: cover; 
+    
+    padding: 40px;
+    /* background-attachment: fixed; */
+    background-image: url(images/teamwork.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#btn-5 {
+    background-color: #FF3E2C;
+}
+
+#presentation {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #FF3E2C;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    bottom: 0;
+    z-index: 2;
+    width: 1000px;
+    height: 714px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    object-fit: cover; 
+    
+    padding: 40px;
+    /* background-attachment: fixed; */
+    background-image: url(images/presentation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
