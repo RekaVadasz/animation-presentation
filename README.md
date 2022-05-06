@@ -6,3 +6,4 @@ Website: plasticbionic.com
 
 Team members: Szandi, Patrik, Attila, Réka
 
+idel screensize for presentation: 1920x1080 px
